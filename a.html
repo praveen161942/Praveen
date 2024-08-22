@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <input type="text" id="nam" value="" ><br>
+        <label>Enter your mail</label>
+        <input type="text" id="u1" name="txtMail"><br>
+        <label>Enter Password</label> 
+        <input type="password" id="u2" name="txtpass"><br>
+        <input type="button" name="btnGreet" value="sumit" onclick="sumit()">
+        <script>
+            console.log("hello world");
+            
+            function sumit()
+            {
+                var name=document.getElementById("nam").value;
+                var mail=document.getElementById("u1").value;
+                var pas=document.getElementById("u2").value;
+                if(mail=""){
+                    alert("enter the mail");
+                }
+                else if(pas=""){
+                    alert("enter the password");
+                }
+                else{
+                    alert("WELCOME "+name);
+                }
+                
+            }
+            for(var i=0;i<5;i++){
+                console.log(i);
+            }
+        </script>
+    </body>
+</html> 
